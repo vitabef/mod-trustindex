@@ -12,3 +12,15 @@
   [[module.mounts]]
     source = 'static'
     target = 'static'
+
+[params.modules.trustindex]
+  integration = "critical"
+
+[params.modules.trustindex.csp]
+  script-src = ["cdn.trustindex.io"]
+  connect-src = [
+    "*.trustindex.io",
+    "trustindex.io"
+  ]
+  img-src = ["trustindex.io"]
+  style-src = ["'unsafe-inline'"]
