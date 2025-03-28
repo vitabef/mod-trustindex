@@ -1,5 +1,5 @@
 [modules]
   [modules.trustindex]
-    integration = "optional"
+    integration = "critical"
     disableTemplate = true
     state = "defer"
